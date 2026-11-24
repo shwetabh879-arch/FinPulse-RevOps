@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FinPulse RevOps | Automated Revenue & Billing Operations</title>
+
+  <!-- ========================================================= -->
+  <!-- STEP 2A: PASTE YOUR GOOGLE TAG MANAGER <head> SCRIPT HERE -->
+  <!-- ========================================================= -->
+
+  <style>
+    :root {
+      --primary: #1e3a8a;
+      --accent: #2563eb;
+      --bg: #f8fafc;
+      --text: #0f172a;
+      --muted: #475569;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    body { background: var(--bg); color: var(--text); line-height: 1.6; }
+    header { background: #ffffff; border-bottom: 1px solid #e2e8f0; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; }
+    .logo { font-weight: 800; font-size: 1.25rem; color: var(--primary); }
+    nav a { margin-left: 1.5rem; text-decoration: none; color: var(--muted); font-weight: 500; }
+    .hero { max-width: 960px; margin: 4rem auto; padding: 0 5%; text-align: center; }
+    .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; color: var(--text); }
+    .hero p { font-size: 1.15rem; color: var(--muted); max-width: 680px; margin: 0 auto 2rem; }
+    .cta-group { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .btn { padding: 0.85rem 1.75rem; border-radius: 6px; font-weight: 600; text-decoration: none; cursor: pointer; border: none; font-size: 1rem; }
+    .btn-primary { background: var(--accent); color: #ffffff; }
+    .btn-secondary { background: #ffffff; color: var(--primary); border: 1px solid #cbd5e1; }
+    .section { max-width: 960px; margin: 4rem auto; padding: 2.5rem; background: #ffffff; border-radius: 10px; border: 1px solid #e2e8f0; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+    .card { padding: 1.5rem; background: var(--bg); border-radius: 8px; border: 1px solid #e2e8f0; }
+    .card h3 { margin-bottom: 0.5rem; color: var(--primary); }
+    form { display: grid; gap: 1rem; max-width: 520px; margin: 1.5rem auto 0; }
+    label { font-weight: 600; font-size: 0.9rem; }
+    input, select { width: 100%; padding: 0.75rem; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 1rem; }
+    #confirmation-box { display: none; padding: 1.25rem; background: #dcfce7; color: #166534; border-radius: 6px; margin-top: 1rem; text-align: center; font-weight: 600; }
+    footer { text-align: center; padding: 3rem 5%; color: var(--muted); font-size: 0.9rem; border-top: 1px solid #e2e8f0; margin-top: 4rem; }
+  </style>
+</head>
+<body>
+
+  <!-- =========================================================== -->
+  <!-- STEP 2B: PASTE YOUR GOOGLE TAG MANAGER <body> NOSCRIPT HERE -->
+  <!-- =========================================================== -->
+
+  <header>
+    <div class="logo">FinPulse RevOps</div>
+    <nav>
+      <a href="#features">Capabilities</a>
+      <a href="#resources">Whitepaper</a>
+      <a href="#contact">Contact Sales</a>
+      <!-- Outbound link for GA4 Enhanced Measurement -->
+      <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Automate Your Revenue Pipeline &amp; Billing Reconciliation</h1>
+    <p>Eliminate manual spreadsheet leakage across CRM, commercial ad logs, and enterprise invoicing with real-time revenue operations telemetry.</p>
+    <div class="cta-group">
+      <a href="#contact" id="cta-hero-demo" class="btn btn-primary" data-cta-location="hero">Book a Live Demo</a>
+      <a href="#features" id="cta-hero-pricing" class="btn btn-secondary" data-cta-location="hero">Explore Solutions</a>
+    </div>
+  </section>
+
+  <section id="features" class="section">
+    <h2>Core Revenue Operations Modules</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Commercial Log Sync</h3>
+        <p>Automated reconciliation between scheduled ad inventory and monthly client billing approvals.</p>
+      </div>
+      <div class="card">
+        <h3>CRM Attribution</h3>
+        <p>Connect marketing campaign UTMs directly to closed-won enterprise pipeline stages.</p>
+      </div>
+      <div class="card">
+        <h3>Leakage Alerts</h3>
+        <p>Instant anomaly detection when contract terms and invoice line items diverge.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="resources" class="section">
+    <h2>2026 BFSI &amp; Media RevOps Benchmark Report</h2>
+    <p style="margin: 0.75rem 0 1.25rem; color: var(--muted);">Download our technical guide on reducing monthly billing cycle times by 40%.</p>
+    <!-- Triggers GA4 Enhanced Measurement file_download -->
+    <a href="finpulse-revops-benchmark-2026.pdf" download id="download-whitepaper" class="btn btn-secondary">Download PDF Guide (1.4 MB)</a>
+  </section>
+
+  <section id="contact" class="section">
+    <h2 style="text-align: center;">Schedule a Consultation</h2>
+    <p style="text-align: center; color: var(--muted);">Select your operational focus and our team will prepare a tailored walkthrough.</p>
+
+    <form id="lead-capture-form">
+      <div>
+        <label for="full-name">Full Name</label>
+        <input type="text" id="full-name" name="full_name" placeholder="e.g., Rohan Deshmukh" required />
+      </div>
+      <div>
+        <label for="work-email">Work Email</label>
+        <input type="email" id="work-email" name="work_email" placeholder="rohan@company.com" required />
+      </div>
+      <div>
+        <label for="service-tier">Primary Focus Area</label>
+        <select id="service-tier" name="service_tier">
+          <option value="revops_automation">Revenue &amp; Billing Automation</option>
+          <option value="crm_integration">CRM &amp; Attribution Pipeline</option>
+          <option value="enterprise_audit">Enterprise Data Audit</option>
+        </select>
+      </div>
+      <button type="submit" id="submit-lead-btn" class="btn btn-primary">Request Consultation</button>
+    </form>
+
+    <div id="confirmation-box">
+      Thank you! Your consultation request has been logged. Our RevOps specialist will reach out shortly.
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 FinPulse RevOps Sandbox. Built for Google Analytics 4 &amp; GTM Portfolio Demonstration.</p>
+  </footer>
+
+  <script>
+    // Handles form submission cleanly without page reload errors on static hosting
+    document.getElementById('lead-capture-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('confirmation-box').style.display = 'block';
+    });
+  </script>
+</body>
+</html>
